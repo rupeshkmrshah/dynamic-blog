@@ -32,7 +32,7 @@ const BlogPostPage = () => {
       <h1>{currentPost.title}</h1>
       {currentPost.image_url && <img src={currentPost.image_url} alt={currentPost.title} />}
       <p>{currentPost.description}</p>
-      <p>By: {currentPost.author}</p>
+      <p>By: {currentPost.source}</p>
       <SocialMediaButtons>
         <button onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${currentPost.url}`, '_blank')}>Share on Facebook</button>
         <button onClick={() => window.open(`https://twitter.com/share?url=${currentPost.url}&text=${currentPost.title}`, '_blank')}>Share on Twitter</button>
