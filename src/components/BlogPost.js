@@ -18,7 +18,7 @@ const BlogPost = () => {
     <PostContainer>
       <h1>{currentPost.title}</h1>
       <img src={currentPost.urlToImage} alt={currentPost.title} />
-      <p>By: {currentPost.author}</p>
+      <p>By: {currentPost.source}</p>
       <p>{currentPost.content}</p>
       <ShareButtons>
         <FacebookShareButton url={window.location.href}>
